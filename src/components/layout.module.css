@@ -1,0 +1,22 @@
+
+.container {
+  margin: auto;
+  margin-top: 50px;
+  max-width: 1000px;
+  font-family: sans-serif;
+  background-color: white;
+  padding: 2rem;
+  
+}
+
+.heading {
+  color: #005067;
+}
+
+
+.site-title {
+  font-size: 3rem;
+  color: gray;
+  font-weight: 700;
+  margin: 1rem 0;
+}

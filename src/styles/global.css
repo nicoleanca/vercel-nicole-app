@@ -1,0 +1,26 @@
+html {
+  /* background-image: url("../images/alex-perez-pEgsWN0kwbQ-unsplash.jpg"); */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center;
+  background-size: cover;
+
+}
+
+head {
+  background-color: blueviolet;
+}
+
+a {
+  color: rebeccapurple;
+}
+
+.cursive-font {
+  font-family: 'Snell Roundhand', cursive;
+  font-size: 2rem;
+}
+
+.align-right {
+  float: right;
+}
