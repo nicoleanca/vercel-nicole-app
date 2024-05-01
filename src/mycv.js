@@ -12,6 +12,5 @@ const CvPage = () => {
 }
 
 
-export const Head = () => <Seo title="My CV" />
 
 export default CvPage

@@ -11,6 +11,5 @@ const PortofolioPage = () => {
 }
 
 
-export const Head = () => <Seo title="Portofolio" />
 
 export default PortofolioPage

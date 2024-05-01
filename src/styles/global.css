@@ -1,5 +1,5 @@
 html {
-  /* background-image: url("../images/alex-perez-pEgsWN0kwbQ-unsplash.jpg"); */
+  background-image: url("../images/alex-perez-pEgsWN0kwbQ-unsplash.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-origin: content-box;
@@ -24,3 +24,4 @@ a {
 .align-right {
   float: right;
 }
+
