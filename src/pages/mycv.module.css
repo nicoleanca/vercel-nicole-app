@@ -1,0 +1,116 @@
+.documentWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.documentItem {
+  height:auto;
+}
+
+.buttonWrap {
+  display: flex;
+  justify-content: end;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/* Button styling animation */
+
+.animationButton {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  border: 0;
+  position: relative;
+  letter-spacing: 0.15em;
+  margin: 0 auto;
+  padding: 1rem 2.5rem;
+  background: transparent;
+  outline: none;
+  font-size: 28px;
+  color: black;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;
+  z-index: 2;
+  &::after,
+    &::before {
+      border: 0;
+      content: "";
+      position: absolute;
+      height: 50%;
+      width: 9%;
+      transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      z-index: -1;
+      border-radius: 50%;
+    }
+    &::before {
+      border: 0;
+      background-color: #005067;
+      top: -0.75rem;
+      left: 0.5rem;
+    }
+    &::after {
+      background-color: #14323F;
+      top: 3rem;
+      left: 23rem;
+    }  &:hover {
+      color: white;
+      &::before,
+      &::after {
+        top: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+        animation: none;
+      }
+      &::after {
+        left: 0rem;
+      }
+      &::before {
+        top: 0.5rem;
+        left: 0.35rem;
+      }
+    }
+}
+
+.animationMove {
+  &::after,
+  &::before {
+    border: 0;
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 9%;
+    z-index: -1;
+    border-radius: 50%;
+  }
+  &::before {
+    border: 0;
+    background-color: #005067;
+    top: 4.5rem;
+    left: 0.5rem;
+  }
+  &::after {
+    background-color: #14323F;
+    top: 3rem;
+    left: 2.5rem;
+  }
+}
+
+@keyframes topAnimation {
+from {
+  transform: translate(0rem, 0);
+}
+to {
+  transform: translate(0rem, 3.5rem);
+}
+}
+@keyframes bottomAnimation {
+from {
+  transform: translate(-20.5rem, 0);
+}
+to {
+  transform: translate(0rem, 0);
+}
+}
+

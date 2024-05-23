@@ -8,13 +8,10 @@ html {
 
 }
 
-head {
-  background-color: blueviolet;
-}
+/* #root {
+  height: 100vh;
+} */
 
-a {
-  color: rebeccapurple;
-}
 
 .cursive-font {
   font-family: 'Snell Roundhand', cursive;
@@ -24,4 +21,15 @@ a {
 .align-right {
   float: right;
 }
+
+.page-container {
+  margin: auto;
+  margin-top: 50px;
+  max-width: 800px;
+  font-family: sans-serif;
+  background-color: white;
+  padding: 2rem;
+  
+}
+
 

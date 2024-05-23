@@ -13,6 +13,10 @@ const Layout = ({ pageTitle, children }) => {
       <main>
        {pageTitle && <h1 className={styles.heading}>{pageTitle}</h1>}
         {children}
+        {/* <p className="cursive-font">
+          Hi, <br />I build beautiful, accessible and efficient websites. <br />{" "}
+          <span className="align-right"> -Nicole</span>
+        </p> */}
       </main>
     </div>
     </div>
