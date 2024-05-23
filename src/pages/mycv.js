@@ -11,23 +11,26 @@ const CvPage = () => {
   const pdfURL = "/CV_NicoleA.pdf";
   const buttonRef = useRef(null);
 
+
+  //start animation on download my cv button
   useEffect(() => {
-    startAnimation();
+    // startAnimation();
   }, [])
 
-  const startAnimation = async () => {
-    while (true) {
-      if (!buttonRef.current.className.includes(styles.animationMove)) {
-        buttonRef.current.className += ` ${styles.animationMove}`;
-      } else {
-        const lastIndex = buttonRef.current.className.lastIndexOf(" ");
-        buttonRef.current.className = buttonRef.current.className.substring(0, lastIndex);
-      }
-       console.log(buttonRef.current.className);
-      await timeout(1000);
-    }
-  }
+  //animation on download cv button
+  // const startAnimation = async () => {
+  //   while (true) {
+  //     if (!buttonRef.current.className.includes(styles.animationMove)) {
+  //       buttonRef.current.className += ` ${styles.animationMove}`;
+  //     } else {
+  //       const lastIndex = buttonRef.current.className.lastIndexOf(" ");
+  //       buttonRef.current.className = buttonRef.current.className.substring(0, lastIndex);
+  //     }
+  //     await timeout(1000);
+  //   }
+  // }
 
+  //display PDF file
   const PDFViewer = () => {
     return (
       <div className={styles.documentWrap}>

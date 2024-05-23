@@ -16,7 +16,6 @@
 }
 
 /* Button styling animation */
-
 .animationButton {
   text-transform: uppercase;
   text-decoration: none;
@@ -42,17 +41,19 @@
       transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       z-index: -1;
       border-radius: 50%;
+      animation: topAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s infinite alternate;
     }
     &::before {
       border: 0;
       background-color: #005067;
-      top: -0.75rem;
-      left: 0.5rem;
+      top: 3rem;
+      left: 22.4rem;
+      animation: bottomAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate;
     }
     &::after {
       background-color: #14323F;
-      top: 3rem;
-      left: 23rem;
+      top: -0.8rem;
+      left: 0.1rem;
     }  &:hover {
       color: white;
       &::before,
