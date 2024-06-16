@@ -10,3 +10,18 @@ height: 150px;
  width: 150px;
 height: 150px;
 }
+
+@media (max-width: 600px) {
+  .puzzlepiececontainer {
+    margin: 0px;
+    width: 80px;
+  height: 80px;
+  }
+  
+  
+  .imgstyle {
+   margin:  -2px 0px -2px 0px;
+   width: 80px;
+  height: 80px;
+  }
+}

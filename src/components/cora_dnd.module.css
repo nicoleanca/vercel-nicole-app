@@ -1,7 +1,15 @@
 .dndcontext {
-  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 450px;
   height: 450px;
 
 }
 
+@media (max-width: 600px) {
+  .dndcontext {
+    width: 240px;
+    height: 240px;
+  }
+}
