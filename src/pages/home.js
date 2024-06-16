@@ -36,6 +36,7 @@ const Home = () => {
       {/* {handwriting()} */}
       <p className="cursive-font">
         Hi there, <br />I build beautiful, accessible and efficient websites. <br />
+        Take a look around, hope you enjoy.
         <span className="align-right"> -Nicole</span>
       </p>
     </div>

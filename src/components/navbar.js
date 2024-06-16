@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from "./navbar.module.css";
 import { Link } from "react-router-dom";
 import { pages } from "../utils/constants";
