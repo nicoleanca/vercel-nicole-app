@@ -116,25 +116,55 @@ const CoraDnd = () => {
       return;
     }
     const list = elements;
-    if (destinationIndex === 0) {
-      list[sourceIndex].order = list[0].order - 1;
+    // if (destinationIndex === 0) {
+    //   list[sourceIndex].order = list[0].order - 1;
+    //   console.log(list);
+    //   sortList(list);
+    //   return;
+    // }
+    // if (destinationIndex === list.length - 1) {
+    //   list[sourceIndex].order = list[list.length - 1].order + 1;
+    //   console.log(list);
+    //   sortList(list);
+    //   return;
+    // }
+    // if (destinationIndex < sourceIndex) {
+    //   list[sourceIndex].order =
+    //     (list[destinationIndex].order + list[destinationIndex - 1].order) / 2;
+    //     console.log(list);
+    //     sortList(list);
+    //   return;
+    // }
+    // list[sourceIndex].order =
+    //   (list[destinationIndex].order + list[destinationIndex + 1].order) / 2;
+    //   console.log(list);
+    //   sortList(list);
+
+    
+      list[sourceIndex].order = destinationIndex;
+      list[destinationIndex].order = sourceIndex;
+      console.log(list);
       sortList(list);
+      
       return;
-    }
-    if (destinationIndex === list.length - 1) {
-      list[sourceIndex].order = list[list.length - 1].order + 1;
-      sortList(list);
-      return;
-    }
-    if (destinationIndex < sourceIndex) {
-      list[sourceIndex].order =
-        (list[destinationIndex].order + list[destinationIndex - 1].order) / 2;
-        sortList(list);
-      return;
-    }
-    list[sourceIndex].order =
-      (list[destinationIndex].order + list[destinationIndex + 1].order) / 2;
-      sortList(list);
+    
+    // if (destinationIndex === list.length - 1) {
+    //   list[sourceIndex].order = list[list.length - 1].order + 1;
+    //   console.log(list);
+    //   sortList(list);
+    //   return;
+    // }
+    // if (destinationIndex < sourceIndex) {
+    //   list[sourceIndex].order =
+    //     (list[destinationIndex].order + list[destinationIndex - 1].order) / 2;
+    //     console.log(list);
+    //     sortList(list);
+    //   return;
+    // }
+    // list[sourceIndex].order =
+    //   (list[destinationIndex].order + list[destinationIndex + 1].order) / 2;
+    //   console.log(list);
+    //   sortList(list);
   };
 
 
