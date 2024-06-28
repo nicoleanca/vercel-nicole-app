@@ -9,7 +9,7 @@ const PortfolioPage = () => {
     <div className="page-container">
       <NavBar/>
       {/* <CoraDnd2/> */}
-      <CoraDnd/>
+      <CoraDnd2/>
     </div>
   )
 }

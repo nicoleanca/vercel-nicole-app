@@ -82,15 +82,15 @@ const CoraDnd2 = () => {
   const initialColumns = {
     todo: {
       id: 'todo',
-      list: ['item 1', 'item 2', 'item 3']
+      list: [{source: puzzle1, id: '001'}, {source: puzzle2, id: '002'}, {source: puzzle3, id: '003'}]
     },
     doing: {
       id: 'doing',
-      list: []
+      list: [{source: puzzle4, id: '004'}, {source: puzzle5, id: '005'}, {source: puzzle6, id: '006'}]
     },
     done: {
       id: 'done',
-      list: []
+      list: [{source: puzzle7, id: '007'}, {source: puzzle8, id: '008'}, {source: puzzle9, id: '009'}]
     }
   }
   const [columns, setColumns] = useState(initialColumns)
@@ -177,23 +177,11 @@ const CoraDnd2 = () => {
       Inspired by https://codesandbox.io/p/sandbox/react-beautiful-dnd-grid-vypgtd.
 
       <div className={styles.dndcontext2}>
-
-      <DragDropContext className={styles.column} onDragEnd={onDragEnd}>
-        
-          {Object.values(columns).map(col => (
-            <Column  col={col} key={col.id} />
-          ))}
-        
-      </DragDropContext>
-
-
-        {/* <ListManager
-          items={elements}
-          direction="horizontal"
-          maxItems={3}
-          render={item =>  <CoraDndPiece item={item} />}
-          onDragEnd={(sourceIndex, destinationIndex) => reorderList(sourceIndex, destinationIndex)}       
-        />      */}
+        <DragDropContext className={styles.column} onDragEnd={onDragEnd}>     
+            {Object.values(columns).map(col => (
+              <Column  col={col} key={col.id} />
+            ))}       
+        </DragDropContext>
       </div>
 
     </div>

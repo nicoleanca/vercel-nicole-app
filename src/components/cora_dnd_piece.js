@@ -8,8 +8,8 @@ const CoraDndPiece = (props) => {
 
   return (
     <React.Fragment>
-      {item.source && 
-      <img className={styles.imgstyle} src={item.source} alt="Puzzle pic" />}
+      {item && 
+      <img className={styles.imgstyle} src={item} alt="Puzzle pic" />}
     </React.Fragment>
   )
 }
